@@ -214,3 +214,7 @@ graph TD
 - Documentation page is served from Pug templates
 - Static assets (CSS/JS) are served directly from the public folder
 - Interactive features are handled by client-side JavaScript
+
+### Github Actions
+
+- CI
