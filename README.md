@@ -218,3 +218,4 @@ graph TD
 ### Github Actions
 
 - CI
+- Static HTML workflow
