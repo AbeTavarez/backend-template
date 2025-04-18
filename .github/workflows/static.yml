@@ -1,0 +1,22 @@
+name: HTML/CSS PR Check
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check-files:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Validate file structure
+        run: |
+          echo "Checking for index.html..."
+          test -f index.html
+
+          echo "Checking for styles folder..."
+          test -d css || test -d styles || echo "No styles folder found"
